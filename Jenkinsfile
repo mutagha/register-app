@@ -22,9 +22,11 @@ pipeline {
 
         stage("Checkout from SCM"){
                 steps {
-                    git branch: 'maaster', url: 'https://github.com/mutagha/addressbook.git'
-                }
+                    git branch: 'main', url: 'https://github.com/mutagha/addressbook.git'
+            }
         }
+    }
+}
 
         stage("Build Application"){
             steps {
